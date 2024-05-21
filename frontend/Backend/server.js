@@ -4,7 +4,7 @@ const multer = require('multer');
 const { MongoClient } = require('mongodb');
 
 const app = express();
-const PORT = process.env.PORT || 5000; // Use environment variable for port
+const PORT =  5000; // Use environment variable for port
 
 // Middleware for handling CORS
 app.use(cors());
