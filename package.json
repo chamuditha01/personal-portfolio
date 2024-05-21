@@ -8,7 +8,7 @@
     "frontend": "cd frontend && npm start",
     "backend": "cd Backend && npm start",
     "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
-    "build": "npm run build-frontend"
+
   
   },
   "keywords": [],
