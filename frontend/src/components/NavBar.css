@@ -1,0 +1,11 @@
+.scrolled {
+    backdrop-filter: blur(8px); /* Add blur effect when scrolled */
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust background color with transparency */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Add smooth transition */
+  }
+  
+  /* Add additional styles for active link if needed */
+  .active {
+    color: #000; /* Change color for active link */
+  }
+  
