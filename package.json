@@ -8,14 +8,14 @@
     "frontend": "cd frontend && npm start",
     "backend": "cd Backend && npm start",
     "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
-    "build": "npm run build-frontend",
-    "start-frontend": "react-scripts start --prefix frontend",
-    "build-frontend": "react-scripts build --prefix frontend"
+    "build": "npm run build-frontend"
+  
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "react-scripts": "^5.0.1"
   }
 }
