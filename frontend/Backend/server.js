@@ -4,7 +4,7 @@ const multer = require('multer');
 const { MongoClient } = require('mongodb');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000; // Use environment variable for port
 
 // Middleware for handling CORS
 app.use(cors());
@@ -23,6 +23,8 @@ async function getDb() {
   return client.db(dbName);
 }
 
+// Define production backend URL
+const productionBackendUrl = 'https://personal-portfolio-rho-ruby.vercel.app';
 
 app.get('/getPP', async (req, res) => {
   try {

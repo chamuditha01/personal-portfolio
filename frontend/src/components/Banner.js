@@ -17,11 +17,13 @@ export const Banner = () => {
   const toRotate = [ "A Web Developer", "A Web Designer","A Backend Developer" ];
   const period = 2000;
 
+  const apiUrl = 'https://personal-portfolio-rho-ruby.vercel.app';
+
   useEffect(() => {
     // Fetch data from the backend API
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/getPP');
+        const response = await axios.get(`${apiUrl}/getPP`)
         setPersons(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
