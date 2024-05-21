@@ -23,7 +23,7 @@ export const Banner = () => {
     // Fetch data from the backend API
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/getPP'); 
+        const response = await axios.get('https://portfolio-backend-fs6hcrgs8-chamuditha01s-projects.vercel.app//getPP'); 
         setPersons(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
