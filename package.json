@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "frontend": "cd frontend && npm start",
     "backend": "cd Backend && npm start",
-    "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "build": "npm run build-frontend",
+    "start-frontend": "react-scripts start --prefix frontend",
+    "build-frontend": "react-scripts build --prefix frontend"
   },
   "keywords": [],
   "author": "",
