@@ -15,7 +15,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^8.2.2",
-    "react-scripts": "^5.0.1"
+    "concurrently": "^8.2.2"
   }
 }
