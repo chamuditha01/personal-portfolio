@@ -10,11 +10,11 @@ import { useState } from "react";
 
 export const Profile = () => {
   const [getskill, setGetskill] = useState([]);
-  const apiUrl = 'https://personal-portfolio-rho-ruby.vercel.app';
+  
 
   const fetchSkills = async () => {
     try {
-      const response = await axios.get('https://portfolio-backend-d6qzdd30h-chamuditha01s-projects.vercel.app/getSkills');
+      const response = await axios.get('http://portfolio-backend-d6qzdd30h-chamuditha01s-projects.vercel.app/getSkills');
       setGetskill(response.data);
     } catch (error) {
       console.error("Error fetching data:", error);
