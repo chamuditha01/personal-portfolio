@@ -24,7 +24,7 @@ async function getDb() {
 }
 
 // Define production backend URL
-const productionBackendUrl = 'https://personal-portfolio-rho-ruby.vercel.app';
+const productionBackendUrl = 'https://personal-portfolio-rho-ruby.vercel.app1';
 
 app.get('/getPP', async (req, res) => {
   try {
