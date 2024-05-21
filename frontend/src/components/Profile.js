@@ -14,7 +14,7 @@ export const Profile = () => {
 
   const fetchSkills = async () => {
     try {
-      const response = await axios.get('https://portfolio-backend-fs6hcrgs8-chamuditha01s-projects.vercel.app/getSkills');
+      const response = await axios.get('https://portfolio-backend-phi-three.vercel.app/getSkills');
       setGetskill(response.data);
     } catch (error) {
       console.error("Error fetching data:", error);
