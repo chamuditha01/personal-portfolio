@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import emailjs from 'emailjs-com';
 import contactImg from "./Web-development,-programmer-engineering-and-coding-website-on-augmented-reality-interface-screens-on-transparent-background-PNG.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -27,29 +28,34 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-
+  
+    const serviceID = 'your_service_id';
+    const templateID = 'your_template_id';
+    const userID = 'your_user_id';
+  
+    const templateParams = {
+      to_email: 'heshanchamuditha05@gmail.com',
+      firstname: formDetails.firstName,
+      lastname: formDetails.lastName,
+      email: formDetails.email,
+      phone: formDetails.phone,
+      message: formDetails.message,
+    };
+  
+    console.log('Template Params:', templateParams);
+  
     try {
-      // Assuming you have a backend server running at http://localhost:5000/contact
-      const response = await fetch("http://localhost:5000/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json;charset=utf-8",
-        },
-        body: JSON.stringify(formDetails),
-      });
-
+      const result = await  emailjs.send('service_4cqizvz', 'template_utvo1s2', templateParams, 'A0ZPR861WjTOAyAZq')
       setButtonText("Send");
-      const result = await response.json();
-
       setFormDetails(formInitialDetails);
-
-      if (result.code === 200) {
+  
+      if (result.status === 200) {
         setStatus({ success: true, message: 'Message sent successfully' });
       } else {
         setStatus({ success: false, message: 'Something went wrong, please try again later.' });
       }
     } catch (error) {
-      console.error('Error fetching or downloading the PDF:', error);
+      console.error('Error sending email:', error);
       setStatus({ success: false, message: 'Error sending the message. Please try again later.' });
     }
   };
@@ -59,20 +65,15 @@ export const Contact = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
-          <TrackVisibility partialVisibility>
-  {({ isVisible }) => {
-    
-
-    return (
-      <img
-        className={`animated ${isVisible ? 'animate__animated animate__rollIn' : 'invisible'}`}
-        src={contactImg}
-        alt="Contact Us"
-      />
-    );
-  }}
-</TrackVisibility>
-
+            <TrackVisibility partialVisibility>
+              {({ isVisible }) => (
+                <img
+                  className={`animated ${isVisible ? 'animate__animated animate__rollIn' : 'invisible'}`}
+                  src={contactImg}
+                  alt="Contact Us"
+                />
+              )}
+            </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
             <TrackVisibility>
@@ -95,9 +96,9 @@ export const Contact = () => {
                       </Col>
                       <Col size={12} className="px-1">
                         <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                        <button style={{color:'black',backgroundColor:'lightblue'}}
-                        onMouseEnter={(e) => { e.target.style.borderRadius = '50px';e.target.style.transition = '0.3s ease'; }} // Change background color on hover
-                        onMouseLeave={(e) => { e.target.style.borderRadius = '0px';e.target.style.transition = '0.3s ease'; }} type="submit"><span style={{color:'black',backgroundColor:'lightblue'}}>{buttonText}</span></button>
+                        <button style={{ color: 'black', backgroundColor: 'lightblue' }}
+                          onMouseEnter={(e) => { e.target.style.borderRadius = '50px'; e.target.style.transition = '0.3s ease'; }} // Change background color on hover
+                          onMouseLeave={(e) => { e.target.style.borderRadius = '0px'; e.target.style.transition = '0.3s ease'; }} type="submit"><span style={{ color: 'black', backgroundColor: 'lightblue' }}>{buttonText}</span></button>
                       </Col>
                       {status.message && (
                         <Col>

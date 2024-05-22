@@ -4,6 +4,8 @@ import { FiArrowRightCircle, FiArrowDownCircle } from "react-icons/fi";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import axios from 'axios';
+import img from './IMG-20231113-WA0002.jpg'
+
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -112,11 +114,9 @@ export const Banner = () => {
           </Col>
           <Col xs={12} md={6} xl={4}>
             <TrackVisibility>
-              <ul>
-                {persons.map(person => (
-                  <img key={person._id} style={{ borderRadius: '50%',border:'2px solid #320167' }} src={`data:image/jpeg;base64,${person.image}`} alt={person.name} />
-                ))}
-              </ul>
+            
+                  <img id="pp" src={img} alt='d' />
+             
             </TrackVisibility>
           </Col>
         </Row>

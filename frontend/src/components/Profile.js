@@ -104,7 +104,7 @@ export const Profile = () => {
             <p style={{ textAlign: "justify" }}>
               I’m a 2nd year Undergraduate at NIBM following BSc(Hons)
               Computing. Successfully completed diploma in Software Engineering
-              (1st year) with 3.90 GPA. A creative and experienced web
+              (1st year) with 3.91 GPA. A creative and experienced web
               developer. Possesses a solid foundation in programming languages
               such as Java, c#, and JavaScript. And have ability to adapt to new
               technologies and frameworks rapidly and Strong problem-solving
