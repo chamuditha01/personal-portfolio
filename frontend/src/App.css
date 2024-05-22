@@ -194,6 +194,23 @@ span.navbar-text {
     transform: scale(0);
 	
 }
+#pp {
+  width: 400px;
+  height: 380px;
+  border: 10px solid transparent;
+  border-radius: 50%;
+
+  margin: 10px;
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+  #pp {
+    margin-top: 20px;
+    width: 280px;
+    height: 280px;
+  }
+}
 .social-icon a:hover::before {
     transform: scale(1);
 }
@@ -328,7 +345,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   object-fit: cover;
   background-repeat: no-repeat;
 }
-
+.particles-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #000; /* Set a background color if needed */
+}
+.content {
+position: absolute;
+top: 50%;
+left: 50%;
+color: white; /* Adjust text color as needed */
+z-index: 2; /* Ensure the text is above the particles */
+}
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;

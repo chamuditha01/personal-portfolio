@@ -99,7 +99,7 @@ export const Profile = () => {
 
           <div
             id="rightbody"
-            style={{ textAlign: "justify", width: "80%", marginLeft: "10%" }}
+            style={{ textAlign: "justify", width: "80%", marginLeft: "10%" ,zIndex: "1"}}
           >
             <p style={{ textAlign: "justify" }}>
               I’m a 2nd year Undergraduate at NIBM following BSc(Hons)

@@ -75,10 +75,9 @@ export const Contact = () => {
               )}
             </TrackVisibility>
           </Col>
-          <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div className={isVisible ? "" : ""}>
+          <Col size={12} md={6} style={{zIndex:'1'}}>
+            
+                <div  style={{zIndex: "2"}}>
                   <h2>Contact me</h2>
                   <form onSubmit={handleSubmit}>
                     <Row>
@@ -108,8 +107,7 @@ export const Contact = () => {
                     </Row>
                   </form>
                 </div>
-              )}
-            </TrackVisibility>
+              
           </Col>
         </Row>
       </Container>

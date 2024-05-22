@@ -4,6 +4,10 @@ import { FiArrowRightCircle, FiArrowDownCircle } from "react-icons/fi";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import axios from 'axios';
+
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
+import React, { useCallback } from "react";
 import img from './IMG-20231113-WA0002.jpg'
 
 
@@ -19,7 +23,14 @@ export const Banner = () => {
   const toRotate = [ "A Web Developer", "A Web Designer","A Backend Developer" ];
   const period = 2000;
 
+  const particlesInit = useCallback(async engine => {
+    console.log(engine);
+    await loadSlim(engine);
+}, []);
 
+const particlesLoaded = useCallback(async container => {
+    console.log(container);
+}, []);
 
   useEffect(() => {
     // Fetch data from the backend API
@@ -78,18 +89,25 @@ export const Banner = () => {
   };
 
   return (
+  <div>
+  <div className="particles-container">
+            <Particles id="tsparticles" url="/particles.json" init={particlesInit} loaded={particlesLoaded} />
+            
+        </div>
     <section className="banner" id="home">
+      
       <Container>
         <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={8}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+          
+          <Col xs={12} md={6} xl={8} style={{zIndex:'1'}}>
+            
+              
+                <div >
                   <h1>{`I'm Chamuditha Heshan`}<br />
                     <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "Backend Developer"]'>
                       <span className="wrap">{text}</span>
                     </span>
-                  </h1>
+                  </h1> 
                   <p>A dedicated software engineering undergraduate with a passion for problem-solving and coding. Eager to learn and apply theoretical concepts in practical projects. Demonstrates a strong foundation in programming, algorithms, and a commitment to continuous growth in the field.</p>
                   <button
                     style={{
@@ -108,19 +126,21 @@ export const Banner = () => {
                   >
                     Download CV <FiArrowRightCircle style={{ transition: 'transform 0.5s ease-in-out', transform: isHovered ? 'rotate(90deg)' : 'rotate(0)' }} />
                   </button>
+                  
                 </div>
-              )}
-            </TrackVisibility>
+              
+           
           </Col>
-          <Col xs={12} md={6} xl={4}>
-            <TrackVisibility>
+          <Col xs={12} md={6} xl={4}  style={{zIndex:'1'}}>
+        
             
-                  <img id="pp" src={img} alt='d' />
+          <img id="pp"  src={img} alt='d' />
              
-            </TrackVisibility>
+           
           </Col>
         </Row>
       </Container>
     </section>
+    </div>
   )
 }
