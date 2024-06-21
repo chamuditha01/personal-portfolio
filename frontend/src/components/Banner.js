@@ -131,12 +131,12 @@ const particlesLoaded = useCallback(async container => {
               
            
           </Col>
-          <Col xs={12} md={6} xl={4}  style={{zIndex:'1'}}>
-        
-            
-          <img id="pp"  src={img} alt='d' />
-             
-           
+          <Col xs={12} md={6} xl={4} >
+            <div className="hexagon-wrapper">
+              <div className="hexagon-border">
+                <img id="pp" className="hexagon-image" src={img} alt='Profile' />
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>

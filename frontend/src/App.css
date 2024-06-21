@@ -198,7 +198,7 @@ span.navbar-text {
 #pp {
   width: 380px; /* Adjust the width as needed */
   clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
-  border: 5px solid rgba(124, 205, 197, 0.4); /* Adjust the border size and color as needed */
+
   margin: 10px;
   
   z-index: 2;
@@ -419,6 +419,7 @@ z-index: 2; /* Ensure the text is above the particles */
 
 
 
+
 /************ Skills Css ************/
 
 .skill {
@@ -547,7 +548,7 @@ z-index: 2; /* Ensure the text is above the particles */
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #32354d -5.91%, rgba(1, 11, 73, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, #03402c -5.91%, rgba(0, 78, 57, 0.5) 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -758,3 +759,21 @@ h4
   margin-top: 20px;
 }
 
+
+.hexagon-wrapper {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.hexagon-border {
+  position: relative;
+  width: 430px; /* Adjust size as needed */
+  height: 430px; /* Adjust size as needed */
+  background-color: rgba(44, 219, 202, 0.4);
+  clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}

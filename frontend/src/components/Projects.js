@@ -115,6 +115,7 @@ export const Projects = () => {
                         <p style={{marginTop:'-20px',textAlign:'left'}}><a style={{textDecoration:'none',color:'white'}} target="blank" href="https://www.credly.com/badges/d80f16e1-a053-4057-8b3e-c711fcb901b1">3. Cisco Introduction to Cyber Security</a> - Cisco Networking Acedamy</p>
                         <p style={{marginTop:'-20px',textAlign:'left'}}><a style={{textDecoration:'none',color:'white'}} target="blank" href="https://freecodecamp.org/certification/fcc8c188344-4332-49b8-ac85-dc268b1c94a3/responsive-web-design">4. Responsive Web Design</a> - FreeCodeCamp</p>
                         <p style={{marginTop:'-20px',textAlign:'left'}}><a style={{textDecoration:'none',color:'white'}} target="blank" href="https://www.cloudskillsboost.google/public_profiles/9daa2230-6183-4bb8-a9d9-d581bbe2bddc/badges/9011866?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">5. Introduction to Generative Ai</a> - Google Cloud</p>
+                        <p style={{marginTop:'-20px',textAlign:'left'}}><a style={{textDecoration:'none',color:'white'}} target="blank" href="https://www.sololearn.com/en/certificates/CC-YIJLF3ZV">6. Python Developer</a> - Sololearn</p>
                       </div>
                       
                       </Row>
