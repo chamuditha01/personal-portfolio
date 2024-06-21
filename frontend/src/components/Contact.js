@@ -95,9 +95,9 @@ export const Contact = () => {
                       </Col>
                       <Col size={12} className="px-1">
                         <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                        <button style={{ color: 'black', backgroundColor: 'lightblue' }}
+                        <button style={{ color: 'black', backgroundColor: 'rgba(2, 186, 168, 0.4)' }}
                           onMouseEnter={(e) => { e.target.style.borderRadius = '50px'; e.target.style.transition = '0.3s ease'; }} // Change background color on hover
-                          onMouseLeave={(e) => { e.target.style.borderRadius = '0px'; e.target.style.transition = '0.3s ease'; }} type="submit"><span style={{ color: 'black', backgroundColor: 'lightblue' }}>{buttonText}</span></button>
+                          onMouseLeave={(e) => { e.target.style.borderRadius = '0px'; e.target.style.transition = '0.3s ease'; }} type="submit"><span style={{ color: 'black'}}>{buttonText}</span></button>
                       </Col>
                       {status.message && (
                         <Col>

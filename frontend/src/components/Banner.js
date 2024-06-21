@@ -8,7 +8,7 @@ import axios from 'axios';
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import React, { useCallback } from "react";
-import img from './IMG-20231113-WA0002.jpg'
+import img from '../assets/IMG-20231113-WA0002.jpg'
 
 
 export const Banner = () => {
@@ -115,8 +115,8 @@ const particlesLoaded = useCallback(async container => {
                       paddingRight: '10px',
                       paddingLeft: '10px',
                       borderRadius: '30px',
-                      backgroundColor: buttonClicked ? '#010B49' : '#320167',
-                      boxShadow: '0 4px 6px rgba(0, 0, 157, 0.3)',
+                      backgroundColor: buttonClicked ? 'rgba(1, 73, 66, 0.5)' : 'rgba(2, 186, 168, 0.4)',
+                      boxShadow: '0 4px 6px rgba(1, 73, 66, 0.5)',
                       transition: 'background-color 0.3s ease-in-out',
                       transition: 'width 0.5s ease-in-out'
                     }}

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import img1 from "./WhatsApp Image 2024-03-13 at 21.24.24_63c82387.jpg";
 import img2 from "./IMG-20230115-WA0009.jpg";
-import img3 from "./IMG-20231113-WA0002.jpg";
+import img3 from "../assets/IMG-20231113-WA0002.jpg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import axios from "axios";

@@ -129,8 +129,8 @@ p.danger {
 }
 
 .custom-navbar {
-  box-shadow: 0px 10px 10px rgba(66, 0, 146, 0.4); /* Adjust shadow size */
-  border-bottom: 1px solid #320167; /* Add border style */
+  box-shadow: 0px 10px 10px rgba(2, 186, 168, 0.4); /* Adjust shadow size */
+  border-bottom: 1px solid rgba(2, 186, 168, 0.4); /* Add border style */
 }
 
 
@@ -175,7 +175,7 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(23, 0, 59, 0.1);
+    background: rgba(2, 186, 168, 0.4);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
@@ -194,15 +194,16 @@ span.navbar-text {
     transform: scale(0);
 	
 }
-#pp {
-  width: 400px;
-  height: 380px;
-  border: 10px solid transparent;
-  border-radius: 50%;
 
+#pp {
+  width: 380px; /* Adjust the width as needed */
+  clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+  border: 5px solid rgba(124, 205, 197, 0.4); /* Adjust the border size and color as needed */
   margin: 10px;
+  
   z-index: 2;
 }
+
 
 @media (max-width: 600px) {
   #pp {
@@ -326,11 +327,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 #items{
-  background-color: #2e215f;
+  background-color: rgba(46, 193, 178, 0.4);
   padding: 1%;
   border-radius: 30px;
-  box-shadow: 10px 10px 10px rgba(45, 5, 95, 0.4); 
-  border-color: #320167;
+  box-shadow: 10px 10px 10px 0px rgba(0, 54, 49, 0.4); 
+  border-color: rgba(124, 205, 197, 0.4);
   border-width: 1px;
   border-style: solid;
 }
@@ -365,7 +366,7 @@ z-index: 2; /* Ensure the text is above the particles */
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, #2c283a -5.91%, rgba(1, 11, 73, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, #2c283a -5.91%, rgba(2, 186, 168, 0.4) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 30px;
   font-size: 20px;
@@ -423,7 +424,7 @@ z-index: 2; /* Ensure the text is above the particles */
 .skill {
   padding: 0 0 50px 0;
   position: relative;
-  background: linear-gradient(90.21deg, #26024d -5.91%, rgba(1, 11, 73, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(2, 186, 168, 0.4) -5.91%, rgba(1, 57, 50, 0.5) 111.58%);
 }
 .skill-bx {
   background: #000000;
@@ -431,7 +432,7 @@ z-index: 2; /* Ensure the text is above the particles */
   text-align: center;
   padding: 60px 50px;
   margin-top: -40px;
-  border: 2px solid #320167;
+  border: 2px solid rgba(2, 186, 168, 0.4);
 }
 .skill h2 {
 	font-size: 45px;
@@ -465,7 +466,7 @@ z-index: 2; /* Ensure the text is above the particles */
 .project {
   padding: 80px 0;
   position: relative;
-  background: linear-gradient(90.21deg, #26024d -5.91%, rgba(1, 11, 73, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(2, 186, 168, 0.4) -5.91%, rgba(1, 73, 66, 0.5) 111.58%);
 }
 .project h2 {
 	font-size: 45px;
@@ -506,17 +507,17 @@ z-index: 2; /* Ensure the text is above the particles */
   transition: 0.3s ease;
 }
 .project .nav.nav-pills .nav-link#projects-tabs-tab-first.active {
-  border: 3px solid rgba(74, 0, 116, 0.9);
+  border: 3px solid rgba(2, 186, 168, 0.4);
   background-color: transparent;
   transition: 0.3s ease;
 }
 .project .nav.nav-pills .nav-link#projects-tabs-tab-third.active {
-  border: 3px solid rgba(74, 0, 116, 0.9);
+  border: 3px solid rgba(2, 186, 168, 0.4);
   background-color: transparent;
   transition: 0.3s ease;
 }
 .project .nav.nav-pills .nav-link#projects-tabs-tab-second.active {
-  border: 3px solid rgba(74, 0, 116, 0.9);
+  border: 3px solid rgba(2, 186, 168, 0.4);
   background-color: transparent;
   transition: 0.3s ease;
 }
@@ -607,7 +608,7 @@ z-index: 2; /* Ensure the text is above the particles */
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #32354d -5.91%, rgba(1, 11, 73, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, #32354d -5.91%, rgba(2, 186, 168, 0.4) 111.58%);
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -681,7 +682,7 @@ h4
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background: linear-gradient(90.21deg, #32354d -5.91%, rgba(1, 11, 73, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, #32354d -5.91%, rgba(2, 186, 168, 0.4) 111.58%);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
