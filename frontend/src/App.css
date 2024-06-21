@@ -768,12 +768,20 @@ h4
 
 .hexagon-border {
   position: relative;
-  width: 430px; /* Adjust size as needed */
-  height: 430px; /* Adjust size as needed */
+  width: 400px; /* Adjust size as needed */
+  height: 400px; /* Adjust size as needed */
   background-color: rgba(44, 219, 202, 0.4);
   clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 0;
+}
+
+@media (max-width: 600px) {
+  .hexagon-border {
+    
+    width: 300px;
+    height: 300px;
+  }
 }
